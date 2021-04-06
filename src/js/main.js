@@ -37,7 +37,7 @@ function cap(){
 		return
 	}
 	l_tm=performance.now()
-	var im=imC.grabFrame().then(function(img){
+	imC.grabFrame().then(function(img){
 		filter_img(img,COLOR_MATCH)
 		cap()
 	}).catch(function(err){
